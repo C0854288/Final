@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="sliders" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Zw-zg-W6s">
+                                <rect key="frame" x="58" y="248" width="49" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="MEz-Jh-iao"/>
+                                    <constraint firstAttribute="width" constant="47" id="zlM-33-fPi"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="switchChg:" destination="BYZ-38-t0r" eventType="valueChanged" id="WKe-Vq-LE2"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="on" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e2g-2w-tWr">
+                                <rect key="frame" x="201" y="237" width="108" height="53"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="108" id="Ad6-eS-0up"/>
+                                    <constraint firstAttribute="height" constant="53" id="KPY-gT-1MF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
+                                <color key="textColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="qP4-eh-hXZ">
+                                <rect key="frame" x="58" y="355" width="94" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="94" id="ltc-mx-xiz"/>
+                                    <constraint firstAttribute="height" constant="32" id="tQ2-Si-cNO"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="stepperChg:" destination="BYZ-38-t0r" eventType="valueChanged" id="mgD-nT-KU5"/>
+                                </connections>
+                            </stepper>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0IJ-2t-xCI">
+                                <rect key="frame" x="201" y="345" width="108" height="53"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="108" id="GLM-j3-gbZ"/>
+                                    <constraint firstAttribute="height" constant="53" id="Qw1-ar-7Y7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
+                                <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="osO-xa-ZPj">
+                                <rect key="frame" x="46" y="445" width="118" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="sliderChg:" destination="BYZ-38-t0r" eventType="valueChanged" id="Iu2-DO-ewD"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jsy-Xs-DT6">
+                                <rect key="frame" x="201" y="433" width="108" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
+                                <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <constraints>
+                            <constraint firstItem="e2g-2w-tWr" firstAttribute="leading" secondItem="1Zw-zg-W6s" secondAttribute="trailing" constant="96" id="6zZ-Vn-smy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0IJ-2t-xCI" secondAttribute="trailing" constant="105" id="CQA-XH-eGz"/>
+                            <constraint firstItem="0IJ-2t-xCI" firstAttribute="leading" secondItem="qP4-eh-hXZ" secondAttribute="trailing" constant="49" id="MuW-cM-v3h"/>
+                            <constraint firstItem="qP4-eh-hXZ" firstAttribute="top" secondItem="1Zw-zg-W6s" secondAttribute="bottom" constant="76" id="Nsq-Nw-X3e"/>
+                            <constraint firstItem="1Zw-zg-W6s" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="204" id="TN8-bW-Da9"/>
+                            <constraint firstItem="0IJ-2t-xCI" firstAttribute="top" secondItem="e2g-2w-tWr" secondAttribute="bottom" constant="55" id="Xt9-1f-CO7"/>
+                            <constraint firstItem="1Zw-zg-W6s" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="58" id="bev-Lk-Je7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="e2g-2w-tWr" secondAttribute="trailing" constant="105" id="ePm-ub-mhT"/>
+                            <constraint firstItem="e2g-2w-tWr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="193" id="ia9-O0-ynp"/>
+                            <constraint firstItem="qP4-eh-hXZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="58" id="l8z-jE-1Mw"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="Slider" destination="osO-xa-ZPj" id="mGJ-aM-9Af"/>
+                        <outlet property="Stepper" destination="qP4-eh-hXZ" id="09C-qc-CIf"/>
+                        <outlet property="Switch" destination="1Zw-zg-W6s" id="YpK-r6-zTi"/>
+                        <outlet property="sliderSwitch" destination="jsy-Xs-DT6" id="fYB-an-nRM"/>
+                        <outlet property="stepperLabel" destination="0IJ-2t-xCI" id="lUY-cD-RnE"/>
+                        <outlet property="switchLabel" destination="e2g-2w-tWr" id="zAn-Yt-HNM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="67.633928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiarySystemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
